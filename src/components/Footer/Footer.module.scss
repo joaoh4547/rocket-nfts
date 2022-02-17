@@ -1,0 +1,111 @@
+@import "../../styles/vars.scss";
+
+.footer {
+  display: flex;
+  height: 70vh;
+  background-color: $card-color;
+  flex-direction: column;
+
+  .footer-header {
+    padding: 30px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $subtitle-color;
+    button {
+      background-color: $logo-color;
+      height: 60px;
+      width: 60px;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+
+  .footer-content {
+    border-bottom: 1px solid $subtitle-color;
+    display: flex;
+
+    .footer-form {
+      width: 540px;
+      height: 430px;
+      padding: 50px;
+      border-right: 1px solid $subtitle-color;
+
+      h3 {
+        line-height: 37px;
+        color: $text-color;
+        font-size: 20px;
+        font-weight: 500;
+        span {
+          display: block;
+          color: $logo-color;
+        }
+      }
+      .contrast {
+        color: $logo-color;
+      }
+      input {
+        margin-top: 45px;
+        height: 50px;
+        border: 0;
+        width: 250px;
+        outline: none;
+      }
+      input[type="text"] {
+        background-color: $input-color;
+        padding: 15px;
+        color: $text-color;
+        &::placeholder {
+          color: $subtitle-color;
+        }
+      }
+      input[type="submit"] {
+        width: 100px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    .content-links-container {
+      max-width: 50%;
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      gap: 120px;
+      margin: 0 auto;
+      justify-content: space-between;
+      font-size: 17px;
+      .content-links-item {
+        .item-title {
+          color: $text-color;
+          margin-bottom: 12px;
+        }
+        .item-link {
+          a {
+            display: inline-block;
+            color: $subtitle-color;
+            margin: 5px 0;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-end {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+
+    .social-media {
+      display: flex;
+      gap: 15px;
+    }
+  }
+}
