@@ -1,0 +1,243 @@
+@import "../../styles/vars.scss";
+
+.content {
+  overflow: none;
+}
+
+.banner {
+  height: 70vh;
+  display: flex;
+  border-bottom: 2px solid $subtitle-color;
+
+  .left-container {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 2px solid $subtitle-color;
+
+    .banner-content-left-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      h3 {
+        font-weight: 600;
+        font-size: 40px;
+        color: $text-color;
+      }
+      span {
+        color: $subtitle-color;
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .banner-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .banner-content-items-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 350px;
+
+      .banner-content-item {
+        display: flex;
+        width: 350px;
+        flex-direction: column;
+        gap: 70px;
+
+        p {
+          color: $text-color;
+          font-size: 16px;
+          text-align: justify;
+        }
+        a {
+          text-decoration: underline;
+          font-size: 16px;
+        }
+
+        .contrast {
+          color: $logo-color;
+        }
+      }
+    }
+
+    img {
+      height: 300px;
+    }
+  }
+}
+
+.poppular-of-week {
+  height: 94vh;
+  padding: 50px 50px 0px 50px;
+
+  h2 {
+    font-size: 40px;
+    color: $text-color;
+    line-height: 50px;
+    .contrast {
+      color: $logo-color;
+    }
+  }
+
+  .itens-container {
+    display: flex;
+    justify-content: stretch;
+    flex: 1;
+    height: calc(100% - 50px);
+    .left-area {
+      justify-content: center;
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      flex: 1;
+    }
+    .center-area {
+      width: 1px;
+      display: flex;
+      justify-content: center;
+
+      flex: 1;
+
+      .line {
+        width: 2px;
+        background-color: $subtitle-color;
+        height: 100%;
+      }
+    }
+    .right-area {
+      gap: 25px;
+      align-items: flex-start;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      flex: 1;
+    }
+
+    .item {
+      transition: transform 0.3s;
+      margin-top: 7px;
+      display: flex;
+      flex-direction: column;
+
+      width: 350px;
+
+      .item-header {
+        padding: 15px 0;
+        display: flex;
+        flex: 1;
+
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+          font-weight: 500;
+          font-size: 18px;
+          color: $text-color;
+        }
+      }
+
+      img {
+        width: auto;
+        height: 200px;
+
+        border-radius: 4px;
+      }
+      .info {
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        .name {
+          color: $subtitle-color;
+          font-weight: 600;
+        }
+        .value {
+          color: $logo-color;
+        }
+      }
+
+      &:hover {
+        transform: rotateZ(-5deg) scale(0.9);
+
+        img {
+          filter: grayscale(4%);
+        }
+      }
+    }
+  }
+}
+
+.top-artists {
+  padding: 50px 50px 0px 50px;
+  // height: 100vh;
+
+  h2 {
+    font-size: 40px;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contrast {
+    color: $logo-color;
+  }
+
+  .artist-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    gap: 52px;
+    color: $text-color;
+    .artists-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 90px;
+      .card {
+        transition: background-color 0.5s;
+        padding: 20px;
+        background-color: $card-color;
+        display: flex;
+        text-align: start;
+        gap: 70px;
+        border-radius: 4px;
+        .card-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: center;
+        }
+
+        &:hover {
+          background-color: $logo-color;
+        }
+      }
+    }
+
+    .show-all-artists {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      gap: 17px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
