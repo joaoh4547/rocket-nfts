@@ -13,7 +13,7 @@ export const Banner: FC = () => {
             você.
           </span>
           <div className={styles.selecteds}>
-            <img src={Avatars} />
+            <img src={Avatars} alt="avatars" />
             <div className={styles.info}>
               <span className={styles.contrast}>+10</span>
               <span>Artistas Selecionados</span>

@@ -32,7 +32,7 @@ export const PoppularOfWeekItem: FC<PoppularOfWeekItemProps> = ({
         </span>
       </div>
       <div>
-        <img src={image} />
+        <img src={image} alt={name} />
       </div>
     </div>
   );
