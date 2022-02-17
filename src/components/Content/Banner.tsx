@@ -24,21 +24,25 @@ export const Banner: FC = () => {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
               malesuada amet pretium lacus. Id{" "}
-              <a className={styles.contrast}>potenti</a> diam et cras odio
-              viverra. Amet, velit ut hac sit. Enim ultricies mauris mattis nunc
-              semper.
+              <a href="/#" className={styles.contrast}>
+                potenti
+              </a>{" "}
+              diam et cras odio viverra. Amet, velit ut hac sit. Enim ultricies
+              mauris mattis nunc semper.
             </p>
-            <a href="">Lorem ipsum</a>
+            <a href="/#">Lorem ipsum</a>
           </div>
           <div className={styles["banner-content-item"]}>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
               malesuada amet pretium lacus. Id{" "}
-              <a className={styles.contrast}>potenti</a> diam et cras odio
-              viverra. Amet, velit ut hac sit. Enim ultricies mauris mattis nunc
-              semper.
+              <a href="/#" className={styles.contrast}>
+                potenti
+              </a>{" "}
+              diam et cras odio viverra. Amet, velit ut hac sit. Enim ultricies
+              mauris mattis nunc semper.
             </p>
-            <a href="">Lorem ipsum</a>
+            <a href="/#">Lorem ipsum</a>
           </div>
         </div>
         <img src={BannerImage} alt="" />
