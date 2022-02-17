@@ -222,6 +222,10 @@
           justify-content: center;
         }
 
+        .contrast {
+          color: $logo-color;
+        }
+
         &:hover {
           background-color: $logo-color;
         }

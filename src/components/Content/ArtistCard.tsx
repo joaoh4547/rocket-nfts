@@ -12,7 +12,7 @@ export const ArtistCard: FC<ArtistCardProps> = ({ image, name, rating }) => {
       <img src={image} alt="" />
       <div className={styles["card-content"]}>
         <span>{name}</span>
-        <span>{rating}</span>
+        <span className={styles.contrast}>{rating}</span>
       </div>
     </div>
   );
