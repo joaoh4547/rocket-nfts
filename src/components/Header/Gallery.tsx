@@ -12,14 +12,14 @@ import Galeria8 from "../../assets/galeria-8.png";
 export const Gallery: FC = () => {
   return (
     <div className={styles.gallery}>
-      <img src={Galeria1} />
-      <img src={Galeria2} />
-      <img src={Galeria3} />
-      <img src={Galeria4} />
-      <img src={Galeria5} />
-      <img src={Galeria6} />
-      <img src={Galeria7} />
-      <img src={Galeria8} />
+      <img src={Galeria1} alt="img1" />
+      <img src={Galeria2} alt="img1" />
+      <img src={Galeria3} alt="img1" />
+      <img src={Galeria4} alt="img1" />
+      <img src={Galeria5} alt="img1" />
+      <img src={Galeria6} alt="img1" />
+      <img src={Galeria7} alt="img1" />
+      <img src={Galeria8} alt="img1" />
     </div>
   );
 };

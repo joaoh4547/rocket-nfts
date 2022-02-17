@@ -30,16 +30,16 @@ export const Footer: FC = () => {
             <h4 className={styles["item-title"]}>Empresa</h4>
             <ul>
               <li className={styles["item-link"]}>
-                <a href="">Sobre</a>
+                <a href="/#">Sobre</a>
               </li>
               <li className={styles["item-link"]}>
-                <a href="">Serviços</a>
+                <a href="/#">Serviços</a>
               </li>
               <li className={styles["item-link"]}>
-                <a href="">Time</a>
+                <a href="/#">Time</a>
               </li>
               <li className={styles["item-link"]}>
-                <a href="">Carreira</a>
+                <a href="/#">Carreira</a>
               </li>
             </ul>
           </div>
@@ -47,16 +47,16 @@ export const Footer: FC = () => {
             <h4 className={styles["item-title"]}>Mapa</h4>
             <ul>
               <li className={styles["item-link"]}>
-                <a href="">Galeria</a>
+                <a href="/#">Galeria</a>
               </li>
               <li className={styles["item-link"]}>
-                <a href="">Populares</a>
+                <a href="/#">Populares</a>
               </li>
               <li className={styles["item-link"]}>
-                <a href="">Vendas</a>
+                <a href="/#">Vendas</a>
               </li>
               <li className={styles["item-link"]}>
-                <a href="">Contato</a>
+                <a href="/#">Contato</a>
               </li>
             </ul>
           </div>
@@ -64,16 +64,16 @@ export const Footer: FC = () => {
             <h4 className={styles["item-title"]}>Contato</h4>
             <ul>
               <li className={styles["item-link"]}>
-                <a href="">FAQs</a>
+                <a href="/#">FAQs</a>
               </li>
               <li className={styles["item-link"]}>
-                <a href="">Termos</a>
+                <a href="/#">Termos</a>
               </li>
               <li className={styles["item-link"]}>
-                <a href="">Politica</a>
+                <a href="/#">Politica</a>
               </li>
               <li className={styles["item-link"]}>
-                <a href="">Ajuda</a>
+                <a href="/#">Ajuda</a>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@ export const Footer: FC = () => {
       </section>
       <div className={styles["footer-end"]}>
         <div>
-          <a href="">www.rocketseat.com.br</a>
+          <a href="/#">www.rocketseat.com.br</a>
         </div>
         <div className={styles["social-media"]}>
           <Instagram />

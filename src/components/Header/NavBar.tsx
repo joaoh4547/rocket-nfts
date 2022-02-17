@@ -10,13 +10,13 @@ export const Navbar = () => {
       <div>
         <ul className={styles["menu-container"]}>
           <li>
-            <a href="">Comprar NFT</a>
+            <a href="/#">Comprar NFT</a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="/#">Sobre</a>
           </li>
           <li>
-            <a href="">FAQ</a>
+            <a href="/#">FAQ</a>
           </li>
         </ul>
       </div>
