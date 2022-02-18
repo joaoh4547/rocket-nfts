@@ -20,18 +20,18 @@ export const PoppularOfWeek: FC = () => {
           value={1.5}
         />
         <PoppularOfWeekItem
+          image={Astronauta3}
+          title="Astronauta 2"
+          name="Jakeliny Gracielly"
+          value={2.0}
+        />
+        <PoppularOfWeekItem
           image={Astronauta2}
           title="Astronauta 3"
           name="João Inácio (Biro)"
           value={3.75}
         />
 
-        <PoppularOfWeekItem
-          image={Astronauta3}
-          title="Astronauta 2"
-          name="Jakeliny Gracielly"
-          value={2.0}
-        />
         <PoppularOfWeekItem
           image={Astronauta4}
           title="Astronauta 4"
