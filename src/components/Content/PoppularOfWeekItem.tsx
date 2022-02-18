@@ -32,7 +32,9 @@ export const PoppularOfWeekItem: FC<PoppularOfWeekItemProps> = ({
     <div
       className={styles.item}
       style={{ transition: "transform 0.3s" }}
-      onMouseEnter={(e) => (rotate == "rigth" ? rigthRotate(e) : leftRotate(e))}
+      onMouseEnter={(e) =>
+        rotate === "rigth" ? rigthRotate(e) : leftRotate(e)
+      }
       onMouseLeave={reset}
     >
       <div className={styles["item-header"]}>
