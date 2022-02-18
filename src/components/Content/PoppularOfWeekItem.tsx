@@ -8,6 +8,7 @@ interface PoppularOfWeekItemProps {
   name: string;
   value: number;
   image: string;
+  rotate?: "left" | "rigth";
 }
 
 export const PoppularOfWeekItem: FC<PoppularOfWeekItemProps> = ({
@@ -15,9 +16,25 @@ export const PoppularOfWeekItem: FC<PoppularOfWeekItemProps> = ({
   name,
   value,
   image,
+  rotate = "rigth",
 }) => {
+  const leftRotate = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    e.currentTarget.style.transform = "rotateZ(-15deg) scale(0.8)";
+  };
+  const rigthRotate = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    e.currentTarget.style.transform = "rotateZ(15deg) scale(0.8)";
+  };
+
+  const reset = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    e.currentTarget.style.transform = "rotateZ(0) scale(1)";
+  };
   return (
-    <div className={styles.item}>
+    <div
+      className={styles.item}
+      style={{ transition: "transform 0.3s" }}
+      onMouseEnter={(e) => (rotate == "rigth" ? rigthRotate(e) : leftRotate(e))}
+      onMouseLeave={reset}
+    >
       <div className={styles["item-header"]}>
         <h3>{title}</h3>
         <Arrow />

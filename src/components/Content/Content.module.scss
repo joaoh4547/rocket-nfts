@@ -77,13 +77,14 @@
 }
 
 .poppular-of-week {
-  height: 94vh;
-  padding: 50px 50px 0px 50px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h2 {
-    font-size: 40px;
+    font-weight: 600;
+    margin: 45px 0;
     color: $text-color;
-    line-height: 50px;
+    font-size: 30px;
     .contrast {
       color: $logo-color;
     }
@@ -91,24 +92,23 @@
 
   .itens-container {
     display: flex;
-    justify-content: stretch;
-    flex: 1;
-    height: calc(100% - 50px);
+    flex-direction: column;
+    gap: 75px;
+
+    padding-bottom: 15px;
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      gap: 100px;
+    }
     .left-area {
-      justify-content: center;
-      align-items: flex-end;
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-      flex: 1;
+      @media (min-width: 1200px) {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
     }
     .center-area {
-      width: 1px;
-      display: flex;
-      justify-content: center;
-
-      flex: 1;
-
       .line {
         width: 2px;
         background-color: $subtitle-color;
@@ -116,34 +116,22 @@
       }
     }
     .right-area {
-      gap: 25px;
-      align-items: flex-start;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-
-      flex: 1;
+      @media (min-width: 1200px) {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
     }
 
     .item {
-      transition: transform 0.3s;
-      margin-top: 7px;
-      display: flex;
-      flex-direction: column;
-
-      width: 350px;
-
+      padding: 15px;
       .item-header {
-        padding: 15px 0;
         display: flex;
-        flex: 1;
-
         align-items: center;
         justify-content: space-between;
-
+        padding: 15px 0;
         h3 {
-          font-weight: 500;
-          font-size: 18px;
           color: $text-color;
         }
       }
@@ -151,27 +139,16 @@
       img {
         width: auto;
         height: 200px;
-
-        border-radius: 4px;
       }
       .info {
-        padding: 25px 0;
         display: flex;
         justify-content: space-between;
+        padding: 18px 0;
         .name {
           color: $subtitle-color;
-          font-weight: 600;
         }
         .value {
           color: $logo-color;
-        }
-      }
-
-      &:hover {
-        transform: rotateZ(-5deg) scale(0.9);
-
-        img {
-          filter: grayscale(4%);
         }
       }
     }
