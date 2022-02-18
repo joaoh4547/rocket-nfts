@@ -207,7 +207,7 @@
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 90px;
       .card {
-        transition: background-color 0.5s;
+        transition: background-color 0.5s, transform 0.5s;
         padding: 20px;
         background-color: $card-color;
         display: flex;
@@ -227,7 +227,8 @@
         }
 
         &:hover {
-          background-color: $logo-color;
+          background-color: $card-color-hover;
+          transform: scale(0.9);
         }
       }
     }

@@ -2,89 +2,124 @@
 
 .footer {
   display: flex;
-  height: 70vh;
-  background-color: $card-color;
   flex-direction: column;
-
+  background-color: $card-color;
   .footer-header {
-    padding: 30px 200px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     border-bottom: 1px solid $subtitle-color;
+
     button {
-      background-color: $logo-color;
+      transition: transform 0.3s;
       height: 60px;
       width: 60px;
+      outline: none;
       border: 0;
+      background-color: $logo-color;
       cursor: pointer;
+
+      &:hover {
+        transform: scale(0.9);
+      }
     }
   }
 
   .footer-content {
-    border-bottom: 1px solid $subtitle-color;
     display: flex;
+    flex-direction: column;
+    // height: 40vh;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      padding: 0;
+      border-bottom: 1px solid $subtitle-color;
+      height: 300px;
+    }
 
     .footer-form {
-      width: 540px;
-      height: 430px;
-      padding: 50px;
-      border-right: 1px solid $subtitle-color;
+      padding: 17px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      height: 100%;
+      margin: 0;
 
       h3 {
-        line-height: 37px;
         color: $text-color;
-        font-size: 20px;
         font-weight: 500;
-        span {
-          display: block;
-          color: $logo-color;
-        }
+        text-align: center;
+        font-size: 27px;
+      }
+      span {
+        display: block;
       }
       .contrast {
         color: $logo-color;
       }
-      input {
-        margin-top: 45px;
-        height: 50px;
-        border: 0;
-        width: 250px;
-        outline: none;
-      }
-      input[type="text"] {
-        background-color: $input-color;
-        padding: 15px;
-        color: $text-color;
-        &::placeholder {
-          color: $subtitle-color;
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+
+        @media (min-width: 1200px) {
+          flex-direction: row;
+          gap: 0;
+          align-items: center;
+        }
+        input[type="text"] {
+          width: 100%;
+          outline: none;
+          padding: 15px;
+          font-size: 17px;
+          border: 0;
+          background-color: $input-color;
+          color: $text-color;
+          height: 46px;
+
+          &::placeholder {
+            color: $subtitle-color;
+          }
+        }
+
+        input[type="submit"] {
+          align-self: flex-end;
+          background-color: $text-color;
+          border: 0;
+          padding: 15px 23px;
+          font-weight: bold;
+          cursor: pointer;
         }
       }
-      input[type="submit"] {
-        width: 100px;
-        font-weight: bold;
-        cursor: pointer;
+
+      @media (min-width: 1200px) {
+        width: 500px;
+        // gap: 100px;
+        border-right: 1px solid $subtitle-color;
       }
     }
 
     .content-links-container {
-      max-width: 50%;
-      flex: 1;
-      padding: 50px;
       display: flex;
-      gap: 120px;
-      margin: 0 auto;
-      justify-content: space-between;
-      font-size: 17px;
+      padding: 17px;
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-around;
+      @media (min-width: 1200px) {
+        justify-content: space-evenly;
+        flex: 1;
+      }
       .content-links-item {
-        .item-title {
+        h4 {
           color: $text-color;
           margin-bottom: 12px;
         }
-        .item-link {
+        li {
           a {
             display: inline-block;
             color: $subtitle-color;
-            margin: 5px 0;
+            margin-top: 10px;
 
             &:hover {
               text-decoration: underline;
@@ -96,16 +131,17 @@
   }
 
   .footer-end {
-    width: 1400px;
-    margin: 0 auto;
     display: flex;
-    flex: 1;
-    align-items: center;
+    padding: 17px 25px 12px 25px;
     justify-content: space-between;
-
+    align-items: center;
     .social-media {
       display: flex;
       gap: 15px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 17px 50px 12px 50px;
     }
   }
 }
