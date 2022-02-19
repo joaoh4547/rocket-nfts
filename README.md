@@ -16,6 +16,24 @@ Tecnologias utilizadas:
 - SCSS
 - Typescript
 
+Visão desktop :
+<img src="./imgs/dk-1.png">
+<img src="./imgs/dk-2.png">
+<img src="./imgs/dk-3.png">
+<img src="./imgs/dk-4.png">
+<img src="./imgs/dk5.png">
+
+Visão Mobile
+\
+\
+<img src="./imgs/mb-1.png">
+<img src="./imgs/mb2.png">
+<img src="./imgs/mb-3.png">
+<img src="./imgs/mb-4.png">
+<img src="./imgs/mb-5.png">
+<img src="./imgs/mb6.png">
+\
+\
 Clonar repositorio
 
 ```
